@@ -1,0 +1,141 @@
+/*h1, h1 em{
+	font-family: 'Unlock', cursive;
+}*/
+
+*{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header, nav{
+	background-color: #F0FFFF;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#fffaf0;
+}
+
+h1{
+	margin:0;
+	padding: 10px;
+}
+
+ol{
+	margin:10px;
+	padding: 10px;
+	list-style-type: none;
+	float: right;
+	/*overflow: hidden;*/
+}
+
+/*.bg-container{
+	position: relative;
+	border: 2px solid green;
+}
+
+.img-left img{
+	width: 50%;
+	float:left;
+	z-index:-1;
+}
+
+.img-right img{
+	width: 24vw;
+	float:left;
+	z-index:-1;
+}*/
+
+#clearfix{
+	clear: both;
+}
+
+.wrapper{
+	position:relative;
+}
+
+.grid-container{
+	/*display: grid;
+	height:70vh;
+	min-height:1000px;
+ 	grid-template-columns: 50% 25% 25%;
+ 	grid-template-rows: 50% 50%;
+ 	z-index:-1;
+  	overflow:hidden;*/
+  	display: grid;
+  	height: 70vh;
+  	min-height: 600px;
+  	grid-template-columns: 50% 25% 25%;
+  	grid-template-rows: 50% 50%;
+  	overflow: hidden;
+}
+
+.left{ /*Used to be .gridcontainer.left img, removed parent class and img. It works!s*/
+/*	width: 50vw;*/
+	/*grid-column-start: 1;
+  	grid-column-end: 2;
+  	grid-row-start: 1;
+  	grid-row-end: 3;
+  	min-width: 100%;
+ 	max-height: 100%;*/
+ 	grid-column-start: 1;
+  	grid-column-end: 2;
+  	grid-row-start: 1;
+ 	grid-row-end: 3;
+  	min-width: 100%;
+  	max-height: 100%;
+}
+
+.right{
+	/*max-width: 25vw;*/
+/*	grid-column-start: 2;
+  	grid-column-end: 4;
+  	grid-row-start: 1;
+ 	grid-row-end: 2;*/
+ 	min-width: 100%;
+  	max-height: 100%;
+}
+
+
+.profile-pic img{
+	width:15%;
+	height:auto;
+	border-radius:100px;
+	border:5px solid white;
+	position:absolute;
+	left: 50%;
+	bottom:0;
+	transform:translate(-50%,35%);
+}
+
+#introduction{
+	padding: 20vh 10vw 0 10vw;
+}
+
+.minion, #faq{
+	padding: 5vh 10vw 5vh 10vw;
+}
+
+#introduction h1, #faq h1{
+	text-align:center;
+}
+
+#introduction h1 em{
+	font-family: 'Unlock', cursive;
+}
+
+.word{
+	padding:5vh 0;
+	text-align:justify;
+}
+
+footer{
+	position:sticky;
+	bottom: 0;
+}
+
+.minion{
+	display:flex;
+	justify-content:center;
+	flex-flow:row wrap;
+}

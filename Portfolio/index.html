@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>My Portflio! &hearts;</title>
+</head>
+<body>
+	<nav>
+		<ul>
+			<ol><a href="#faq">FAQ</a></ol>
+			<ol><a href="#minions">My Minions</a></ol>
+			<ol><a href="#about">About Me</a></ol>
+		</ul>
+		<span id="clearfix"></span>
+	</nav>
+
+	<header>
+		<h1>Hi, how are you?</h1>
+	</header>
+
+	<article>
+
+		<!-- First attempt: Float failed. <div class="bg-container">
+			<span class="img-left"><img src="images/background1.jpg" /></span>
+			<span class="img-right"><img src="images/background2.jpg" /></span>
+			<span class="img-right"><img src="images/background3.jpg" /></span>
+			<span class="img-right"><img src="images/background5.jpg" /></span>
+			<span class="img-right"><img src="images/background5.jpg" /></span>
+			<span class="profile-pic"><img src="images/slime2.jpg" /></span>
+ 			<span id="clearfix">hi</span>
+		</div> -->
+		<div class="wrapper">
+			<div class="grid-container">
+				<img src="images/background1.jpg" alt="" class="left"> <!-- removed div to make the code works -->
+				<img src="images/background2.jpg" alt="" class="right"> 
+				<img src="images/background3.jpg" alt="" class="right"> 
+				<img src="images/background4.jpg" alt="" class="right"> 
+				<img src="images/background5.jpg" alt="" class="right"> 
+			</div>
+			<div class="profile-pic"><img src="images/slime2.jpg"/></div>
+		</div>
+
+		<div id="introduction">
+			<h1><a name="about">Hello, my name is <em>Rimuru Tempest</em>.</a></h1>
+			<div class="word">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nunc erat, porta in egestas et, pharetra sed magna. Donec tincidunt libero lectus. Aenean auctor convallis ipsum hendrerit pellentesque. Suspendisse neque ipsum, lacinia non porttitor eget, dapibus eu orci. Mauris sit amet felis metus. Sed euismod erat in arcu suscipit fringilla. In facilisis fermentum dignissim. Suspendisse ac tortor dapibus justo tincidunt accumsan et et leo. Nunc accumsan blandit semper. </p>
+
+				<p>Phasellus volutpat dignissim augue lacinia volutpat. Maecenas congue turpis sem, ultrices placerat velit suscipit eu. Ut porta nisl vel finibus imperdiet. Duis rhoncus ante sapien, sit amet blandit nisi feugiat ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus placerat augue, vitae finibus ante porta non. Duis volutpat, augue ut sagittis maximus, metus felis ornare felis, placerat scelerisque ex metus sit amet lectus. Phasellus tristique efficitur leo, sed luctus lacus congue id. Maecenas imperdiet euismod nibh, quis aliquet metus maximus sed. Sed velit enim, commodo eleifend tellus nec, eleifend tristique erat. Aliquam erat volutpat. Duis scelerisque, dolor sollicitudin ultrices lobortis, felis felis posuere enim, semper dignissim enim nunc id magna. Aenean mattis magna ante, vel porta lacus vehicula nec. Suspendisse efficitur posuere eros egestas volutpat. </p>
+
+				<p>Donec vitae condimentum nisi, eget cursus sem. Integer et elit ut lectus volutpat dictum. Nulla vel libero purus. Mauris convallis elit et leo vehicula porttitor. Nam urna urna, mollis eu sem luctus, eleifend congue nisl. Aliquam ultrices dolor sed erat porta, nec malesuada risus posuere. Duis sed sem vitae lacus venenatis hendrerit eu id purus. Nulla ex dolor, venenatis ut pretium a, commodo nec elit. Pellentesque ac tempor risus, vitae pretium lorem. Curabitur ultricies purus quis neque convallis, ut tincidunt diam ullamcorper. Mauris vehicula enim a vulputate luctus. Duis elementum, ligula id convallis rutrum, dui sapien finibus ligula, vitae porttitor nulla purus et ipsum. Vivamus varius orci arcu, vel dapibus felis faucibus ac. Aenean aliquam mattis ligula, nec feugiat ex blandit ac. Quisque in elit rutrum sapien fringilla suscipit nec non metus. </p>
+
+				<p>Pellentesque dolor nulla, maximus in bibendum eget, finibus in enim. Duis euismod nisl vel dapibus congue. Suspendisse auctor efficitur mattis. Sed id ante ultricies, efficitur eros rhoncus, dapibus nisl. Pellentesque leo velit, blandit a ipsum nec, sollicitudin tempus lectus. Duis vehicula tincidunt sem, non feugiat orci tempus et. Curabitur tempor luctus dolor iaculis consectetur. Cras ultricies quam nisl, sed scelerisque enim laoreet eu. Sed facilisis velit ex, vel aliquam enim rutrum id. Vivamus tempus ex metus, vitae fringilla urna imperdiet vel. Sed convallis id libero non lacinia. </p>
+
+				<p>Donec non urna et eros facilisis porta id sit amet turpis. Nullam sollicitudin hendrerit diam, ac ultricies ipsum gravida vitae. Morbi rhoncus convallis nunc nec feugiat. Curabitur eu dignissim ex. Proin et lacus quis ligula pharetra imperdiet. Nam vel velit nibh. Maecenas ac aliquet augue. Maecenas interdum eget ligula nec tempor. Vivamus eu nulla a ligula sodales porttitor. Vivamus odio nisl, vestibulum at mattis nec, elementum hendrerit ipsum. </p>
+			</div>
+		</div>
+
+		<div><h2 class="minion" id="minions">My Minions</h2></div>
+		<div class="minion">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height:60vh">
+  				<div class="carousel-inner">
+    				<div class="carousel-item">
+  						<img src="https://myanimelist.cdn-dena.com/images/characters/4/366739.jpg" alt="...">
+  							<div class="carousel-caption d-none d-md-block">
+    							<h5 class="bg-success">Gobuta</h5>
+    							<p class="bg-info">Some random goblin.</p>
+  							</div>
+					</div>
+					<div class="carousel-item active">
+  						<img src="https://myanimelist.cdn-dena.com/images/characters/7/366740.jpg" alt="...">
+  							<div class="carousel-caption d-none d-md-block">
+    							<h5 class="bg-success">Kaijin</h5>
+    							<p class="bg-info">A dwarven blacksmith/artisian.</p>
+  							</div>
+					</div>
+					<div class="carousel-item">
+  						<img src="https://myanimelist.cdn-dena.com/images/characters/11/360789.jpg" alt="...">
+  							<div class="carousel-caption d-none d-md-block">
+    							<h5 class="bg-success">Benimaru</h5>
+    							<p class="bg-info">An ogre who becomes a kijin.</p>
+  							</div>
+					</div>
+    			
+  				</div>
+			</div>
+			
+				<p>Pellentesque dolor nulla, maximus in bibendum eget, finibus in enim. Duis euismod nisl vel dapibus congue. Suspendisse auctor efficitur mattis. Sed id ante ultricies, efficitur eros rhoncus, dapibus nisl. Pellentesque leo velit, blandit a ipsum nec, sollicitudin tempus lectus. Duis vehicula tincidunt sem, non feugiat orci tempus et. Curabitur tempor luctus dolor iaculis consectetur. Cras ultricies quam nisl, sed scelerisque enim laoreet eu. Sed facilisis velit ex, vel aliquam enim rutrum id. Vivamus tempus ex metus, vitae fringilla urna imperdiet vel. Sed convallis id libero non lacinia. </p>
+
+				<p>Donec non urna et eros facilisis porta id sit amet turpis. Nullam sollicitudin hendrerit diam, ac ultricies ipsum gravida vitae. Morbi rhoncus convallis nunc nec feugiat. Curabitur eu dignissim ex. Proin et lacus quis ligula pharetra imperdiet. Nam vel velit nibh. Maecenas ac aliquet augue. Maecenas interdum eget ligula nec tempor. Vivamus eu nulla a ligula sodales porttitor. Vivamus odio nisl, vestibulum at mattis nec, elementum hendrerit ipsum. </p>
+
+				<p>Pellentesque dolor nulla, maximus in bibendum eget, finibus in enim. Duis euismod nisl vel dapibus congue. Suspendisse auctor efficitur mattis. Sed id ante ultricies, efficitur eros rhoncus, dapibus nisl. Pellentesque leo velit, blandit a ipsum nec, sollicitudin tempus lectus. Duis vehicula tincidunt sem, non feugiat orci tempus et. Curabitur tempor luctus dolor iaculis consectetur. Cras ultricies quam nisl, sed scelerisque enim laoreet eu. Sed facilisis velit ex, vel aliquam enim rutrum id. Vivamus tempus ex metus, vitae fringilla urna imperdiet vel. Sed convallis id libero non lacinia. </p>
+
+				<p>Donec non urna et eros facilisis porta id sit amet turpis. Nullam sollicitudin hendrerit diam, ac ultricies ipsum gravida vitae. Morbi rhoncus convallis nunc nec feugiat. Curabitur eu dignissim ex. Proin et lacus quis ligula pharetra imperdiet. Nam vel velit nibh. Maecenas ac aliquet augue. Maecenas interdum eget ligula nec tempor. Vivamus eu nulla a ligula sodales porttitor. Vivamus odio nisl, vestibulum at mattis nec, elementum hendrerit ipsum. </p>
+
+		</div>
+
+		<div id="faq" class="word"><h2>Frequent Asked Questions</h2>
+			<p><em>Lorem Ipsum? </em><br/>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim atque officia, temporibus, dicta provident, modi sed nesciunt voluptates sunt pariatur similique expedita. Rem nobis, incidunt sequi vero reprehenderit repellendus voluptatem!</p>
+			<p><em>Lorem Ipsum? </em><br/>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim atque officia, temporibus, dicta provident, modi sed nesciunt voluptates sunt pariatur similique expedita. Rem nobis, incidunt sequi vero reprehenderit repellendus voluptatem!</p>
+			<p><em>Lorem Ipsum? </em><br/>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim atque officia, temporibus, dicta provident, modi sed nesciunt voluptates sunt pariatur similique expedita. Rem nobis, incidunt sequi vero reprehenderit repellendus voluptatem!</p>
+		</div>
+<!-- 
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img class="d-block w-50" src="https://myanimelist.cdn-dena.com/s/common/store/cover/1629/1c2b31ec34a9f256e8caddab8360f0294f3749a64e5591c2a71d7982353f9a88/l.jpg" alt="First slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-50" src="https://file-comic-99.anyacg.co/thumbs/w600/49/e3/49e34b608c4f8cacd35fc701753a30757a1b2f93_253238_1125_1600.jpg" alt="Second slide">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-50" src="https://images-na.ssl-images-amazon.com/images/I/91tGJGt7ICL.jpg" alt="Third slide">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+			</div>
+		</div> -->
+  
+</div>
+
+	</article>
+
+
+
+	<aside>
+		Hi. Maybe do it next time. >_<
+	</aside>
+
+	<footer>
+		Please contact the webmaster.
+	</footer>
+	<script type="text/javascript">
+function sayGreeting(){ 
+  document.write('Colin!');
+}
+sayGreeting('Jane!')
+
+	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
