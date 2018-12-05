@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<!-- 
+	let propertyType = ["apartment", "house", "hotel"];
+	let propertySubtypes = {
+	"apartment" : ["condominium", "serviced suite"],
+	"house": ["guest house", "pool house"];
+	"hotel": ["bed and breakfast","guest lodge"]
+	};
+
+	Given the above information, how can I randomly select both a property type and a related property subtype.
+	 -->
+	
+	<script type="text/javascript">
+		let propertyType = ["apartment", "house", "hotel"];
+		let propertySubtypes = {
+		apartment : ["condominium", "serviced suite"],
+		house: ["guest house", "pool house"],
+		hotel: ["bed and breakfast","guest lodge"]
+	};
+
+		function randomProperty(){
+			let randomType = Math.floor((Math.random()*propertyType.length)); 
+			let randomSubtypes = Math.floor(Math.random()*propertySubtypes[propertyType[randomType]].length);
+			console.log(randomSubtypes)
+
+			document.write(`The random property is ${propertyType[randomType]} <br/>`);
+			if (randomType==0){
+				document.write(`${propertySubtypes.apartment[randomSubtypes]}`);
+			}	else if (randomType==1){
+				document.write(`${propertySubtypes.house[randomSubtypes]}`);
+			} else {
+				document.write(`${propertySubtypes.hotel[randomSubtypes]}`);
+			}
+		}
+
+		randomProperty();
+/*
+		// Answer
+
+		// Random pick a property type
+		let propertyTypeIndex = Math.floor(Math.random() * propertyTypes.length);
+		let propertyType = propertyType[propertyTypeIndex];
+		let selectedSubtypes = propertySubtypes[propertyType];
+		// Look up property type in subtypes
+		// "Apartment"
+		// Store it to a variable
+		let selectedSubtypes = propertySubtypes["apartment"];
+		// Randomly pick a subtype
+		let index = Math.floor(Math.random() * selectedSubtypes.length);
+		let selectedSubtype = selectedSubtypes[index];
+*/
+
+
+
+
+
+	</script>
+	
+</body>
+</html>

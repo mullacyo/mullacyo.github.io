@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2068</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2068 (Anatomy of "if-else")</h1>
+	<h4>Johnny, have you done your homework?</h4>
+	<div><button onclick="homeworkStatus('done')">YES!</button> <button onclick="homeworkStatus('incomplete')">...no</button></div>
+	<div id='new-box'></div>
+	<p>
+		TOTAL STAR: <span id='star'>0</span>
+	</p>
+	<p>
+		TOTAL DETENTION: <span id='detention'>0</span>
+	</p>
+	<!-- Somehow not working... -->
+	 <!-- <p>
+		Total marks: <span id='sum'>0</span>
+	</p> --> 
+<!--You are John's teacher and you want to automate your life.
+    Create a function call homeworkStatus()
+    It will take in a parameter
+    If it's done say well done. You will also give +1 to good
+    else, say do it now And give him +1 to bad
+
+	// Use this as your driver code
+
+	homeworkStatus('done') // 'well done'
+	homeworkStatus('incomplete') // 'do it now'
+	homeworkStatus('done') // 'well done'
+
+	document.write('TOTAL STAR: ' + good)  // 'TOTAL STAR: 2'
+	document.write('TOTAL DETENTION: ' + bad) // TOTAL DETENTION: 1' -->
+
+	<script>
+		let good = 0;
+		let bad = 0;
+		let marks = good - bad;
+		function homeworkStatus(status){
+			if (status == "done"){
+				document.getElementById('new-box').innerHTML = ('Well done!');
+				// document.write('Well done!');
+				good += 1;
+				document.getElementById('star').innerHTML = good;
+			}
+			else {
+				document.getElementById('new-box').innerHTML = ('DO IT NOW!!!');
+				bad += 1;
+				document.getElementById('detention').innerHTML = bad;
+			}
+			// document.getElementById('sum').innterHTML = marks; //This is not working
+		}
+
+
+	</script>
+</body>
+</html>
+
+
+
+
