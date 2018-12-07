@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2058</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2058 (Practice: Arrays)</h1>
+
+	<!-- Practice 1: Favourites -->
+	
+	<!-- Create an array of your favourite singers in order of your favourite. Store this array in a variable named favouriteSingers.
+
+	An example of an array:
+
+	[ "Yuna", "Britney Spears", "Backsteet Boys", "Spice Girls", "Meatloaf"]
+
+	For each singer, print out their rank as your favourite and their name.
+
+	Example output:
+
+	My #1 favorite singer is Yuna
+	My #2 favorite singer is Britney Spears
+	...-->
+
+	<button onclick = "singer()"> Click me! </button>
+
+	<script>
+		function singer(){
+			const singerName = ["Yuna", "Britney Spears", "Backstreet Boys", "Spice Girls", "Metloaf"];
+			for (i = 0; i < singerName.length; i++){
+				document.write ("My #" + (i+1) +" favorite singer is " + singerName[i] + "<br/>")	
+			}
+		}
+	</script>
+
+	<br/>
+
+	<!-- Practice 2: Random Pick -->
+
+	<!-- Write a pickRandomFromArray function that takes in three parameters, myArray, start, and end. It returns a random item in the myArray whose position is somewhere between start and end, inclusive.
+
+	Example output:
+
+	const pets = ['dogs', 'cats', 'mice', 'rabbits', 'hamsters'];
+
+	pickRandomFromArray(pets, 0, 2); /* will return either dogs, cats or mice */
+	pickRandomFromArray(pets, 2, 3); /* will return either mice or rabbits */
+	pickRandomFromArray(pets, 1, 1); /* will only return cats */
+
+	Hint: check out the slice method. -->
+
+	<button onclick = "randomPets()"> Click me! </button>
+
+	<div id="new-box"></div>
+	<script>
+		
+		function randomPets(){
+
+			const pets = ['dogs', 'cats', 'mice', 'rabbits', 'hamsters'];
+
+			['dogs', 'cats', 'mice']
+			function pickRandomFromArray(arr, start, end){
+
+			}
+
+			pickRandomFromArray(pets, 0, 2); /* will return either dogs, cats or mice */
+			pickRandomFromArray(pets, 2, 3); /* will return either mice or rabbits */
+			pickRandomFromArray(pets, 1, 1); /* will only return cats */
+
+			const myArray = ['dogs', 'cats', 'mice', 'rabbits', 'hamsters'];
+			const randomIndex0 = Math.floor(Math.random() * myArray.length);
+			const randomIndex1 = Math.floor(Math.random() * myArray.length);
+			let box = document.getElementById('new-box')
+			box.innerHTML = myArray.slice(randomIndex0, (randomIndex1+1))
+			// document.write(myArray.slice(randomIndex0, (randomIndex1+1)));
+			console.log(myArray.slice(randomIndex0, (randomIndex1+1)));
+			
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

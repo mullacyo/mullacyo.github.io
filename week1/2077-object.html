@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2077</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2077 (Anatomy of an Object)</h1>
+	<h4>Hungry or Not?</h4>
+	<p>Enter a food and see if a person is hungry. If he is, he eats, if not, he does nothing.</p>
+	<button onclick="getData()">Click ME</button>
+	<div id="display"></div>
+	
+<!-- ✅ Challenge
+
+	Let's extend our personOne object.
+
+	    Create a function called eatFood() that takes in atype of food in your parameter.
+	    This function should detect if the person is hungry.
+	    Below is the expected output
+
+	// hungry
+	personOne.eatFood('apple'); // I am hungry, apple time
+
+	// not hungry
+	personOne.eatFood('apple'); // I am not hungry, no apple please -->
+
+
+	<script type="text/javascript">
+
+		function getData(){
+			let input = prompt("Please enter a Food!", "McDonald's");
+			personOne.eatFood(input);
+		}
+
+		const personOne = {
+			hungry: true,
+			eatFood: function(food){
+				if (personOne.hungry == true){
+					document.getElementById('display').innerHTML = (`I'm hungry, ${food} time!`);
+				} else {
+					document.getElementById('display').innerHTML = (`I'm not hungry, no ${food} please.`);
+				}
+			}
+
+		}
+
+	</script>
+</body>
+</html>
+
+
+
+

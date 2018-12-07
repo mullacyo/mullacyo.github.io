@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2067</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2067 (Ordering Matters)</h1>
+	
+<!-- Here is my decision table
+cookies 	Decision
+Less than or equal to 5 	buy more cookies
+>5 	have a cookie
+>8 	have 2 cookies
+>10 	Share it around -->
+
+	<script>
+
+		// function cookieJar(num) {
+		//     if (num > 5 && num <=8) {
+		//         document.write('have a cookie')
+		//     }
+		//     else if (num > 8 && num <=10) {
+		//         document.write('have 2 cookies')
+		//     }
+		//     else if (num > 10) {
+		//          document.write('Share it around')
+		//     }
+		//     else {
+		//         document.write('buy more cookies')
+		//     }
+		// }
+
+
+		//OR
+
+		function cookieJar(num) {
+		    if (num > 10) {
+		        document.write('Share it around')
+		    }
+		    else if (num > 8){
+		        document.write('have 2 cookies')
+		    }
+		    else if (num > 5) {
+		        document.write('have a cookie')
+		    }
+		    else {
+		        document.write('buy more cookies')
+		    }
+		}
+
+		cookierJar();
+	</script>
+</body>
+</html>
+
+
+
+

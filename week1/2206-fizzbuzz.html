@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2206</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2206 (Challenge: FizzBuzz)</h1>
+
+<!-- 	Let's write a program that can create this logic...
+
+	This program can take in a number and will print the following as your result:
+
+	    Fizz: if the number you pass in is a multiple of 3 eg. 3,6,9,12....
+	    Buzz: if it is a multiple of 5 eg. 5,10,20....
+	    FizzBuzz: if it is a multiple of 5 and 3 eg. 15, 30....
+	    Print the number from the user if the number passed in is not a multiple of 3 or 5
+
+	Hint:
+
+	    Use modulo
+
+	You can start off with these code...
+
+	<h1> The FizzBuzz Logic Challenge </h1>
+
+	<button onclick="doFizzBuzz()"> Start Now </button>
+	<p id="result"> </p>
+
+	<script>
+	    function doFizzBuzz() {
+	        const num = prompt("Please enter a number:", "Number please");  // a prompt will appear to ask you input a number
+
+	        // Write your logic here
+	    }
+	</script>
+
+	Note: To see how prompt work, here is a resource. -->
+
+	<button onclick="doFizzBuzz()"> Start Now </button>
+	<p id="result"> </p>
+
+	<script>
+	    function doFizzBuzz() {
+	        const num = prompt("Please enter a number:", "Number please");  // a prompt will appear to ask you input a number
+
+	        // Write your logic here
+	        if (num % 3 == 0 && num % 5 == 0){ 
+	        	document.getElementById('result').innerHTML = (`FizzBuzz`);
+	        }
+	        else if (num % 3 == 0){
+	        	document.getElementById('result').innerHTML = (`Fizz`);
+	        }
+	        else if (num % 5 == 0){
+	        	document.getElementById('result').innerHTML = (`Buzz`);
+	        }
+	        else if (isNaN(num)){
+	        	document.getElementById('result').innerHTML = (`This is not a number. Start again with a number.`);
+	        }
+	        else{
+	        	document.getElementById('result').innerHTML = (`${num}`);
+	        }
+	    }
+	</script>
+</body>
+</html>
+
+
+
+

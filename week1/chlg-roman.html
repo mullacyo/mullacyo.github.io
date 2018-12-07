@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge: Roman Numerals</title>
+</head>
+<body>
+	<h1>Codes for Lesson #2207 (Challenge: Roman Numerals)</h1>
+	<h4>Please enter a number.</h4>
+	<button onclick="clickMe()">Click Me!</button>
+	<div id="display"></div>
+	<!-- 
+	Let's write a programme that converts our numbers into Roman numerals!
+
+	You have probably seen this before...
+
+	    1 ➡ I
+	    4 ➡ IV
+	    5 ➡ V
+	    6 ➡ VI
+	    9 ➡ IX
+	    10 ➡ X
+	    50 ➡ L
+	    100 ➡ C
+	    500 ➡ D
+	    1000 ➡ M
+
+	Well, If your number is 1453, it will be MCDLIII.
+
+	    1000 ➡ M
+	    400 ➡ CD
+	    500 ➡ D
+	    3 ➡ III
+
+	Here is how your code should kind of flow...
+
+	    Get a number via prompt
+	    If the person puts in a number, it will generate the equivalent roman numeral - Your number [x] in Roman days would have been [xxxx]
+	    If the person puts in other stuff than numbers, just say I asked for a number, not gibberish!
+	    Let's try with these numbers
+
+	            9 should generate IX
+	            1453 should generate MCDLIII
+	            1646 should generate MDCXLVI
+
+	Have fun ☺️! Don't pull your hair off.
+	 -->
+	<script>
+
+		// === FOURTH STRATEGY === 
+		// One for loop allowed
+		// Only addition, division, and remainders allowed
+		// let roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
+		// let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+		
+		// let roman = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
+		// let value = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+
+		// function clickMe(){
+		// 	let num = prompt("Please enter a valid number","Number HERE");
+		// 	let ans = 0;
+
+		// 	if(isNaN(num) || num > 2000 || num <= 0){
+		// 		document.getElementById('display').innerHTML = (`Please write a valid number`);
+		// 		console.log(true);
+		// 	} else {
+		// 		document.getElementById('display').innerHTML = (`The number ${num} in Roman Numerals is `);
+		// 		for (let i = 0; i < roman.length; i++){
+		// 			ans = num / value[i];
+		// 			document.getElementById('display').innerHTML = document.getElementById('display').innerHTML + roman[i].repeat(ans);
+		// 			num = num % value[i];
+		// 		}
+		// 	}
+		// }
+
+		// === THIRD STRATEGY === //
+		// Use only 1 while loop
+		// let romanNumerals = [“”, “I”, “II”, “III”, “IV”, “V”, “VI”, “VII”, “VIII”, “IX”,
+		// “”, “X”, “XX”, “XXX”, “XL”, “L”, “LX”, “LXX”, “LXXX”, “XC”,
+		// “”, “C”, “CC”, “CCC”, “CD”, “D”, “DC”, “DCC”, “DCCC”, “CM”,
+		// “”, “M”]
+		let num = 2018;
+		let i = 3;
+		let digit = 0;
+
+		let romanNumerals = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX",
+		"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
+		"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
+		"", "M"]
+
+		let array = num.toString();
+
+		while (i>=0)
+		{
+			document.write(`${romanNumerals[array[i]+9]<br>}`);
+			i--;
+			// digit += 9;
+		}
+
+
+	</script>
+	
+</body>
+</html>

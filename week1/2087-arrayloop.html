@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2087</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2087 (Infinite Loop)</h1>
+
+<!-- 	
+	✅ Challenge
+	Level 1
+
+	    We want to create a program that greets people.
+
+	Good morning Audrey!
+	Good morning Colin!
+	Good morning KJ!
+	...
+
+	Tips:
+
+	    Create an array of 10 names.
+	    Create a function called greet() that will take in the individual names within the parameter.
+	    How can you loop through your names and create an automatic greeter program?
+
+ -->
+	<script>
+		let names = ['Sher Minn', 'Audrey', 'Colin', 'Mark', 'Matt', 'Emika'];
+		let count = 0;
+		// while (count < names.length){
+		// 	document.write (`Good morning, ${names[count]}!<br/>`);
+		// 	count ++;
+		// }
+		
+		// Level 2
+
+		// OK! How about we make it more fun!
+
+		//     Use your Level 1 code and start modifying.
+		//     The greeter program has a special feature. If your name starts with a, e, i, o, u, it will greet Yo Yo morning Audrey!
+		//     If not, it'll just say Good morning Colin!
+
+		// Yo Yo morning Audrey!
+		// Good morning Colin!
+		// Good morning KJ!
+		// Yo Yo morning Er Whey!
+		// ...
+
+		// Tips:
+
+		//     Create an array of a, e, i, o, u
+		//     Aside from looping through the names, you need to loop through your vowels to check if the name's first alphabet is a vowel.
+
+		let vowel = ['a', 'e', 'i', 'o', 'u'];
+		let num = 0;
+
+		while (count < names.length){
+			if (names[count].charAt(0) == vowel[num]){
+				whilte (num < vowel.length){
+					if (names.charAt[count] == vowel[num])
+						{
+							document.write(`Yo Yo morning ${names[count]}! <br/>`);
+						}
+					num++;
+				}
+			}
+			else {
+				document.write(`Good morning ${names[count]}!`);
+			}
+			count++;
+		}
+
+	</script>
+</body>
+</html>
+
+
+
+

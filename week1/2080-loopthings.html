@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2080</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2080 (Code Demo: Using Loops to Find Things)</h1>
+	<button onclick="catFinder()">Start!</button>
+	<div id="display"></div>
+<!-- 	
+	✅ Challenge
+
+    You run a kitty hotel 🐱 and you have >20 cats in your hotel.
+    Every cat has its own room which (fortunately) follows the index of its position in the cats array.
+
+	cats = ['Meowy', 'Nutty', 'Happy', 'Fatty', 'Brownie', 'Cookie', 'Blackie', 'Notty', 'Camry', 'Mack', 'Peanut', 'Butter', 'Pepper', 'Salt']
+
+	    You want to write a program where you type in the cat's name, and it will automatically reply [x] is inside room [x]
+
+	nameToFind = 'Mack'
+	...
+
+	// Mack is inside room 9
+
+	Tip:
+
+	    Use while loop
+ -->
+	<!-- <script>
+		let	cats = ['Meowy', 'Nutty', 'Happy', 'Fatty', 'Brownie', 'Cookie', 'Blackie', 'Notty', 'Camry', 'Mack', 'Peanut', 'Butter', 'Pepper', 'Salt'];
+
+		function catFinder(){
+			let count = 0
+			let foundRoom = -1;
+			const nameToFind = prompt ("Please enter your cat's name", "Cat name HERE");
+			
+
+			while ( count < cats.length ){
+				if ( nameToFind == cats[count] ){
+					foundRoom = count;
+				}
+				count ++;
+			}
+
+			document.getElementById('display').innerHTML = (`${nameToFind} is inside room ${foundRoom}`);
+			// document.write (`${nameToFind} is inside room ${foundRoom}`);
+		}
+	</script> -->
+	
+<!--
+	2086 (Code Demo: Breaking Out of the Loop)
+	✅ Challenge
+
+    Let's stop the loop once the program achieve its goal. How do you do it?
+    How do you use break?
+ -->
+	<script>
+		let	cats = ['Meowy', 'Nutty', 'Happy', 'Fatty', 'Brownie', 'Cookie', 'Blackie', 'Notty', 'Camry', 'Mack', 'Peanut', 'Butter', 'Pepper', 'Salt'];
+
+		function catFinder(){
+			let count = 0
+			let foundRoom = -1;
+			const nameToFind = prompt ("Please enter your cat's name", "Cat name HERE");
+			
+
+			while ( count < cats.length ){
+				if ( nameToFind == cats[count] ){
+					foundRoom = count;
+					break;
+				}
+				count ++;
+			}
+
+			if (foundRoom != -1){
+				document.getElementById('display').innerHTML = (`${nameToFind} is inside room ${foundRoom}`);
+			}
+			else {
+				document.getElementById('display').innerHTML = (`Error 404: Cat not found`);
+			}
+			// document.write (`${nameToFind} is inside room ${foundRoom}`);
+		}
+	</script>
+</body>
+</html>
+
+
+
+

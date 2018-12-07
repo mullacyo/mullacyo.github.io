@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2082</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2082 (Practice: Loops)</h1>
+	<h4>Practice 1: Odd or Even</h4>
+	<p>Please enter a maximum number. The program will iterate from 0 to that maximum number and check if the number is odd or even.</p>
+	<button onclick="oddEven()">Start!</button>
+	<button onclick="clear()">Reset</button>
+	<div id="display"></div>
+<!-- 	
+	Practice 1: odd or even
+
+	Write a loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
+
+	Example output:
+
+	0 is even
+	1 is not even
+	2 is even
+	3 is not even
+	...
+	20 is even
+
+	Bonus: Try doing this using both while and for loops.
+ -->
+	<script type="text/javascript">
+
+		function oddEven(){
+			let count = 0;
+			let maxNumber = prompt ("Please enter the maximum number", "Number here");
+
+			if (maxNumber > 0)
+			{
+				while(count <= maxNumber){
+					if (count%2 == 0){
+						document.getElementById('display').innerHTML = document.getElementById('display').innerHTML + (`${count} is an even number.<br/>`);
+						// document.write(`${count} is an even number.<br/>`);
+					}
+					else if (count%1 == 0){
+						document.getElementById('display').innerHTML = document.getElementById('display').innerHTML + (`${count} is a odd number.<br/>`);
+						// document.write(`${count} is a odd number.<br/>`);
+					}
+					count++;
+				}
+			}
+
+			else {
+				document.getElementById('display').innerHTML = (`Please enter a number greater than 0.`);			
+			}
+		}
+
+		function clear(){
+			document.getElementById('display').innerHTML = ''; //not working, why?
+		}
+	</script>
+
+<!--Practice 2: assigning grades
+
+	Remember your assignGrade function from before?
+
+	Given an array of scores, display the grade for each score. Use the assignGrade function that you have created earlier.
+
+	Example array of scores:
+
+	const scores = [99, 52, 30, 78, 42, 96, 100, 80];
+
+	Example output:
+
+	Score 99 has grade A
+	Score 52 has grade C
+	Score 30 has grade F
+	...
+	Score 80 has grade B
+ -->
+	<h4>Practice 2: Assigning grades</h4> <!-- Not working :( -->)
+	<p>The function will assign grade for each score.</p>
+	<button onclick="assignGrade()">Start!</button>
+	<button onclick="clear()">Reset</button>
+	<div id="display2"></div>
+
+	<script type="text/javascript">
+
+		const scores = [99, 52, 30, 78, 42, 96, 100, 80];
+		function assignGrade(){
+			for (let i = 0; i < scores.length; i++){
+				if (scores[i] >= 90){
+					document.write(`Score ${scores[i]} has Grade A and it is a ${oddEven2(scores[i])}`); 
+				}
+			}
+
+		}
+
+		function oddEven2(number){
+			if (number % 2 == 0){
+				return ("even");
+			}
+			else if (number % 1 == 0){
+				return ("odd");
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+

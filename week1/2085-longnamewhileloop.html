@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2085</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2085 (Code Demo: Find the Longest Name with 'while' loop)</h1>
+	<button onclick="nameFinder()">Start!</button>
+	<div id="display"></div>
+<!-- 	
+	✅ Challenge
+
+    Have an array of 10 names
+
+    // if you need some names
+    names = ['Sheng', 'Kevin', 'Audrey', 'KJ', 'Delilah', 'Josh', 'Mack', 'Rey']
+
+    The program will loop through the names.
+    How are you able to get the program to write Longest name: Delilah?
+
+ -->
+	<script type="text/javascript">
+
+		function nameFinder(){
+			let extraName = prompt("Enter your name and compare with others!", "Name here.");
+			let names = ['Sheng', 'Kevin', 'Audrey', 'KJ', 'Delilah', 'Josh', 'Mack', 'Rey'];
+			names.push(extraName);
+			let count = 0;
+			let nameToFind = "";
+
+			while(count < names.length){
+				let currentName = names[count]
+
+				if (currentName.length > nameToFind.length){
+					nameToFind = currentName;
+				}
+				count++;
+			}
+			document.getElementById('display').innerHTML = (`The longest name is ${nameToFind}.`);
+		}
+
+
+	</script>
+</body>
+</html>
+
+
+
+

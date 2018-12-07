@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Practice: 2081</title> 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<style type="text/css">* {font-family: 'Noto Sans TC', sans-serif;}</style>
+</head>
+<body>
+	<h1>Codes for Lesson #2081 (Code Demo: Longest name with 'for' loop)</h1>
+	<button onclick="nameFinder()">Start!</button>
+	<div id="display"></div>
+<!-- 	
+	You have done this previously with while loop. How about for loop?
+	✅ Challenge
+
+    Have an array of 10 names
+
+    // if you need some names
+    names = ['Sheng', 'Kevin', 'Audrey', 'KJ', 'Delilah', 'Josh', 'Mack', 'Rey']
+
+    The program will loop through the names.
+    How are you able to get the program to write Longest name: Delilah?
+
+	Remember to compare your for loop and your while loop solution to see the difference!
+ -->
+	<script type="text/javascript">
+
+		function nameFinder(){
+			let extraName = prompt("Enter your name and compare with others!", "Name here.");
+			let names = ['Sheng', 'Kevin', 'Audrey', 'KJ', 'Delilah', 'Josh', 'Mack', 'Rey'];
+			names.push(extraName);
+			let nameToFind = "";
+
+			for (let i=0 ; i < names.length ; i++){
+				let currentName = names[i];
+				if (currentName.length > nameToFind.length){
+					nameToFind = currentName;
+				}
+
+			}
+			document.getElementById('display').innerHTML = (`The longest name is ${nameToFind}.`);
+		}
+	</script>
+</body>
+</html>
+
+
+
+
